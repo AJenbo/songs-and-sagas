@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ce2747fb2d397c72ccea0aa718240b6",
+    "content-hash": "2a4a3cc363be87f18d621e32b3418fab",
     "packages": [
         {
             "name": "brick/math",
@@ -6311,35 +6311,37 @@
         },
         {
             "name": "tomasvotruba/bladestan",
-            "version": "dev-temp-templates",
+            "version": "0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bladestan/bladestan.git",
-                "reference": "0f8add176165961fd92af89c8ac73eb7b3e9d267"
+                "reference": "e1359f3b4ade50065a1c21a33ec4fcef579541e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bladestan/bladestan/zipball/0f8add176165961fd92af89c8ac73eb7b3e9d267",
-                "reference": "0f8add176165961fd92af89c8ac73eb7b3e9d267",
+                "url": "https://api.github.com/repos/bladestan/bladestan/zipball/e1359f3b4ade50065a1c21a33ec4fcef579541e6",
+                "reference": "e1359f3b4ade50065a1c21a33ec4fcef579541e6",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^11.15",
-                "illuminate/filesystem": "^11.15",
-                "illuminate/mail": "^11.15",
-                "illuminate/notifications": "^11.15",
-                "illuminate/view": "^11.15",
+                "illuminate/contracts": "^9.0 || ^10.0 || ^11.0",
+                "illuminate/filesystem": "^9.0 || ^10.0 || ^11.0",
+                "illuminate/view": "^9.0 || ^10.0 || ^11.0",
                 "larastan/larastan": "^3.0",
-                "livewire/livewire": "^3.3.5",
-                "php": "^8.2",
-                "phpstan/phpstan": "^2.0.1"
+                "livewire/livewire": "^2.0 || ^3.0",
+                "php": "^8.1",
+                "phpstan/phpstan": "^2.0"
             },
             "require-dev": {
+                "laravel/framework": "^11.0",
+                "nikic/php-parser": "^5.3",
                 "orchestra/testbench": "^9.9",
-                "phpunit/phpunit": "^11.3.6",
+                "phpunit/phpunit": "^10.0",
                 "rector/rector": "^2.0",
-                "symplify/easy-coding-standard": "^12.1.1",
-                "tomasvotruba/class-leak": "^0.2.6"
+                "symplify/easy-ci": "^11.3",
+                "symplify/easy-coding-standard": "^12.1",
+                "tomasvotruba/class-leak": "^0.2.6",
+                "tracy/tracy": "^2.9"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -6365,7 +6367,7 @@
             ],
             "support": {
                 "issues": "https://github.com/bladestan/bladestan/issues",
-                "source": "https://github.com/bladestan/bladestan/tree/temp-templates"
+                "source": "https://github.com/bladestan/bladestan/tree/0.10.0"
             },
             "funding": [
                 {
@@ -6377,14 +6379,12 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-18T06:41:06+00:00"
+            "time": "2025-02-11T02:21:20+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "tomasvotruba/bladestan": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

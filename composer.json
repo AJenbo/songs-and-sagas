@@ -19,7 +19,7 @@
     },
     "require-dev": {
         "larastan/larastan": "^3",
-        "tomasvotruba/bladestan": "dev-temp-templates"
+        "tomasvotruba/bladestan": "^0.10.0"
     },
     "autoload": {
         "psr-4": {
