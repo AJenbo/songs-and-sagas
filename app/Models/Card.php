@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Popos\Card\Suit;
+use Exception;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -74,5 +75,7 @@ class Card extends Model
             case Suit::SPADES:
                 return '♠';
         }
+
+        throw new Exception();
     }
 }

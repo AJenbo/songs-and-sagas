@@ -7,6 +7,7 @@ use App\Http\Requests\TableUpdateRequest;
 use App\Models\Table;
 use Auth;
 use DB;
+use Exception;
 use Faker;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Query\Builder;
@@ -17,7 +18,7 @@ class TableController extends Controller
     public function index(): View
     {
         $current_user = Auth::user();
-        $table_ids = $this->tables($current_user->id)->get()->pluck('id');
+        $table_ids = $this->tables($current_user->id)->pluck('id');
         /** @var \App\Models\Table[] $tables */
         $tables = Table::whereIn('id', $table_ids)->get();
 
